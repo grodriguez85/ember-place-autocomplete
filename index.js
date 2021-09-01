@@ -40,7 +40,7 @@ module.exports = {
           params.push('region=' + encodeURIComponent(region));
         }
 
-        src += '?' + params.join('&') + "&libraries=places";
+        src += '?' + params.join('&') + "&libraries=geometry,places";
         if (config.environment === 'test') {
           content = '<script type="text/javascript" src="' + src + '"></script>';
         } else {
